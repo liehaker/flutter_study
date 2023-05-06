@@ -1,0 +1,36 @@
+import 'package:flutter/material.dart';
+
+class SnackBarListTile extends StatelessWidget {
+  const SnackBarListTile({
+    super.key,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Builder(builder: (ctx) {
+      return ListTile(
+        title: const Text(
+          'snackBar',
+          textAlign: TextAlign.end,
+        ),
+        trailing: const Icon(null),
+        onTap: () => showSnackBar(context),
+        dense: true,
+      );
+    });
+  }
+}
+
+void showSnackBar(BuildContext context) {
+  Navigator.pop(context);
+  ScaffoldMessenger.of(context).showSnackBar(
+    const SnackBar(
+      backgroundColor: Colors.teal,
+      duration: Duration(milliseconds: 1000),
+      content: Text(
+        'SnackBar',
+        textAlign: TextAlign.center,
+      ),
+    ),
+  );
+}
