@@ -18,4 +18,5 @@ class FlutterWebViewTile extends StatelessWidget {
 
 webViewScreen(BuildContext context) {
   Navigator.pop(context);
+  Navigator.pushNamed(context, 'flutterWebviewPluginScreen');
 }

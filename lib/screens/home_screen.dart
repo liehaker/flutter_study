@@ -17,7 +17,7 @@ class HomeScreen extends StatelessWidget {
         actions: <Widget>[
           IconButton(
             icon: const CircleAvatar(
-              backgroundImage: AssetImage("assets/N2L.gif"),
+              backgroundImage: AssetImage("assets/channels4_profile.jpg"),
               radius: 30,
               backgroundColor: Colors.transparent,
             ),
@@ -58,14 +58,21 @@ class HomeScreen extends StatelessWidget {
                 'InAppWebView',
                 textAlign: TextAlign.start,
               ),
+              Divider(
+                height: 10.0,
+                color: Colors.blueAccent,
+              ),
               Text(
-                'FlutterWebView',
+                '2023.05.09',
                 textAlign: TextAlign.start,
               ),
               Divider(
-                height: 20.0,
+                height: 10.0,
                 color: Colors.blueAccent,
-                thickness: 1,
+              ),
+              Text(
+                'FlutterWebView',
+                textAlign: TextAlign.start,
               ),
             ],
           ),

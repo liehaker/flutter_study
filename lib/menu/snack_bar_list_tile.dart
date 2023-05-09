@@ -26,7 +26,7 @@ void showSnackBar(BuildContext context) {
   ScaffoldMessenger.of(context).showSnackBar(
     const SnackBar(
       backgroundColor: Colors.teal,
-      duration: Duration(milliseconds: 1000),
+      duration: Duration(milliseconds: 3000),
       content: Text(
         'SnackBar',
         textAlign: TextAlign.center,

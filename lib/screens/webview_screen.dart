@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_inappwebview/flutter_inappwebview.dart';
 
+import '../main.dart';
+
 class WebviewScreen extends StatelessWidget {
   const WebviewScreen({super.key});
 
@@ -32,8 +34,7 @@ class WebviewScreen extends StatelessWidget {
           children: <Widget>[
             InAppWebView(
               initialUrlRequest: URLRequest(
-                url: Uri.parse(
-                    "https://www.hyundaicapital.com/main_new/main/CPMNMN0101.hc"),
+                url: Uri.parse(gUrl),
               ),
               onWebViewCreated: (InAppWebViewController controller) {},
             ),
