@@ -74,6 +74,10 @@ class HomeScreen extends StatelessWidget {
                 'FlutterWebView',
                 textAlign: TextAlign.start,
               ),
+              Text(
+                '구글트렌트 만들어보자',
+                textAlign: TextAlign.start,
+              ),
             ],
           ),
         ),

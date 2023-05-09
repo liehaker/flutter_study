@@ -24,14 +24,13 @@ class MyDrawer extends StatelessWidget {
           // ),
           UserAccountsDrawerHeader(
             decoration: const BoxDecoration(
-              image:
-                  DecorationImage(image: AssetImage('assets/background.png')),
-              color: Colors.blueGrey,
-              // borderRadius: BorderRadius.only(
-              //   topRight: Radius.circular(30),
-              //   bottomRight: Radius.circular(30),
-              // )
-            ),
+                image:
+                    DecorationImage(image: AssetImage('assets/background.png')),
+                color: Colors.blueGrey,
+                borderRadius: BorderRadius.only(
+                  topRight: Radius.circular(30),
+                  // bottomRight: Radius.circular(30),
+                )),
             currentAccountPicture: const CircleAvatar(
               backgroundImage: AssetImage('assets/channels4_profile.jpg'),
             ),

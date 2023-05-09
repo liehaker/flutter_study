@@ -15,6 +15,13 @@ class SnackBarListTile extends StatelessWidget {
         ),
         trailing: const Icon(null),
         onTap: () => showSnackBar(context),
+        subtitle: const Text(
+          '전 Screen',
+          textAlign: TextAlign.end,
+          style: TextStyle(
+            fontSize: 10,
+          ),
+        ),
         dense: true,
       );
     });

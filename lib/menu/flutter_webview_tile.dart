@@ -6,13 +6,14 @@ class FlutterWebViewTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListTile(
-        title: const Text(
-          'FlutterWebView',
-          textAlign: TextAlign.end,
-        ),
-        trailing: const Icon(null),
-        onTap: () => webViewScreen(context),
-        dense: true);
+      title: const Text(
+        'FlutterWebView',
+        textAlign: TextAlign.end,
+      ),
+      trailing: const Icon(null),
+      onTap: () => webViewScreen(context),
+      dense: true,
+    );
   }
 }
 
